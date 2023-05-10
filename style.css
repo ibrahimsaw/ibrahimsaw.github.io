@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+body{
+    min-height: 100vh;
+    position: relative;
+    height: 1PX;
+}
+nav{
+    width: 100%;
+    height: 100%;
+    background-color: #060c21;
+    background-image: url(./photos/6362793_2264.jpg);
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+    
+}
+header{
+    width:100%;
+    height: 100%;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 797px)
+{
+
+        body{
+            min-height: 70vh;
+            position: relative;
+            height: 1PX;
+        }
+        nav{
+            width: 100%;
+            height: 100%;
+            background-image: url('./photos/Fabrication\ de\ produits\ d\'hygiène\ corporelle\ -\ 25\ mars.jfif');
+            background-size: cover;
+            position: relative;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .body {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            min-height: 100vh;
+            flex-wrap: wrap;
+            background-color: #fffefefa;
+        }
+}
+@media (max-width: 511px)
+{
+
+        body{
+            min-height: 70vh;
+            position: relative;
+            height: 100vh;
+        }
+        nav{
+            width: 100%;
+            height: 100%;
+            background-image: url('./photos/peau/Premium\ Photo\ _\ Front\ view\ of\ essential\ oil\ bottle\ \(1\).jfif');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+}
+
+.body {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    flex-wrap: wrap;
+    background-color: #720909fa;
+}
+
+.button{
+    position: relative;
+    width: 200px;
+    height: 300px;
+    margin: 40px;
+    justify-content: center;
+    align-items: center;
+}
+.box {
+    position: relative;
+    width: 200px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #060c21;
+    margin: -1px;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.box::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #fff;
+    z-index: -1;
+}
+
+.box::after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #fff;
+    z-index: -1;
+    filter: blur(40px);
+}
+
+.box:nth-child(1)::before,
+.box:nth-child(1)::after {
+    background: linear-gradient(235deg, #89ff00, #010615, #00bcd4);
+}
+
+.box:nth-child(2)::before,
+.box:nth-child(2)::after {
+    background: linear-gradient(235deg, #ff005e, #010615, #fbff00);
+}
+
+.box:nth-child(3)::before,
+.box:nth-child(3)::after {
+    background: linear-gradient(235deg, #772aff, #010615, #f321d7);
+}
+.box:nth-child(4)::before,
+.box:nth-child(4)::after {
+    background: linear-gradient(235deg, #05c515, #010615, #720fc4);
+}
+.box:nth-child(5)::before,
+.box:nth-child(5)::after {
+    background: linear-gradient(235deg, #772aff, #010615, #2196F3);
+}
+
+.box .glass {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    display: block;
+    background: rgba(255, 255, 255, .1);
+    pointer-events: none;
+}
+
+.box .content {
+    padding: 20px;
+    color: #fff;
+}

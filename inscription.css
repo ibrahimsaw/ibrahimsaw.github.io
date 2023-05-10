@@ -1,0 +1,133 @@
+table {
+    border-collapse: collapse;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sabs" sans-serif;
+    width: 100%;
+}
+
+.container {
+    position: relative;
+    width: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.table {
+    width: 75%;
+    height: auto;
+    padding: 50px;
+    left: 50%;
+    top: 50%;
+    margin: 75px 50%;
+    transform: translateX(-50%);
+    align-items: center;
+    border-collapse: collapse;
+    background: var(--color-white);
+    border-radius: 4px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.formulaire {
+    position: relative;
+    width: 300px;
+    right: 50px;
+    height: auto;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    border-radius: 4px;
+    padding: 30px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+
+}
+
+.form {
+    padding: 25px 40px;
+}
+
+.form-control {
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.quantite {
+    margin: 5px;
+    position: relative;
+    display: flex;
+
+}
+
+.form-control label {
+    display: inline-block;
+    margin-bottom: 10px;
+
+}
+
+.form-control input {
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    font-family: inherit;
+    font-size: 14px;
+    width: 100%;
+    height: 40px;
+    padding-left: 10px;
+}
+
+form button {
+    background:  #1ec36dd9;
+    border: 2px solid rgba(0, 0, 0, 0.281);
+    color: white;
+    display: left;
+    font-family: inherit;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 16px;
+    width: 50%;
+    height: 50;
+    cursor: pointer;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+body {
+    font-family: "Open Sabs" sans-serif;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-image: url(./photos/composition-produits-beaute-peau.jpg);
+    background-size: 100%;
+    position: relative;
+}
+@media (max-width: 797px)
+{
+
+        body{
+            width: 100%;
+            height: 100%;
+            background-image: url('./photos/Fabrication\ de\ produits\ d\'hygiène\ corporelle\ -\ 25\ mars.jfif');
+            background-size: 100%;
+            position: relative;
+        }
+}
+@media (max-width: 511px)
+{
+
+        body{
+            width: 100%;
+            height: 100%;
+            background-image: url('./photos/peau/Premium\ Photo\ _\ Front\ view\ of\ essential\ oil\ bottle\ \(1\).jfif');
+            background-size: 100%;
+            position: relative;
+        }
+}
+
